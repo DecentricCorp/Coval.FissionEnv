@@ -13,9 +13,12 @@
     "node": ">=7.6.0"
   },
   "dependencies": {
+    "bip39": "^2.5.0",
+    "bitcore-ecies": "^1.0.3",
     "body-parser": "*",
     "co": "~4.6.0",
-    "coval.js": "https://github.com/DecentricCorp/Coval.js.git",
+    "coval.js": "https://github.com/DecentricCorp/Coval.js.git#bitcore-lib",
+    "ethereumjs-wallet": "^0.6.0",
     "express": "*",
     "minimist": "*",
     "morgan": "*",
