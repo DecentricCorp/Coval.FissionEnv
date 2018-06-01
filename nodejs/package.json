@@ -1,13 +1,17 @@
 {
-  "name": "fission-nodejs-runtime",
+  "name": "fission-coval-runtime",
   "version": "0.1.0",
-  "author": "Soam Vasani",
+  "author": "Shannon Code",
   "contributors": [
     {
-      "name": "Soam Vasani",
-      "email": "soamvasani@platform9.com"
+      "name": "Shannon Code",
+      "email": "shannon@cov.al"
     }
   ],
+  "scripts": {
+    "cairo-mac": "brew install cairo",
+    "cairo-nix": "apt-get install libcairo2-dev libjpeg-dev libgif-dev"
+  },
   "description": "NodeJS run container for the fission framework",
   "engines": {
     "node": ">=7.6.0"
@@ -26,6 +30,7 @@
     "npm-update": "^1.0.6",
     "request": "^2.81.0",
     "request-promise-native": "^1.0.3",
+    "svg2img": "^0.3.0",
     "underscore": ">=1.8.3"
   }
 }

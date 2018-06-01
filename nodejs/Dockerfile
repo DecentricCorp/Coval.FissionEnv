@@ -9,7 +9,9 @@ ENV NODE_ENV $NODE_ENV
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 RUN apk update
-RUN apk add git libtool autoconf automake alpine-sdk python
+RUN apk add --no-cache git libtool autoconf automake alpine-sdk python g++ cairo-dev jpeg-dev
+# libjpeg-turbo-dev cairo-dev pango
+#RUN apt-get install libcairo2-dev libjpeg-dev libgif-dev
 COPY package.json /usr/src/app/
 RUN npm install && npm cache clean --force
 COPY server.js /usr/src/app/server.js
